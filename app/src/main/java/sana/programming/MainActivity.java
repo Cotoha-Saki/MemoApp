@@ -23,3 +23,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void //動画を見て続きを書く
 }
+
