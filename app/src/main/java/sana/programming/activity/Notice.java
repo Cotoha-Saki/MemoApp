@@ -22,7 +22,7 @@ public class Notice extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        Intent intentNotice = new Intent(getApplication(), MainActivity.class);
-        startActivity(intentNotice);
+        Intent intentMain = new Intent(getApplication(), MainActivity.class);
+        startActivity(intentMain);
     }
 }

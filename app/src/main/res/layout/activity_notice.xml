@@ -6,15 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".activity.Notice">
 
+
     <Button
         android:id="@+id/notice"
-        android:layout_width="76dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="36dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="628dp"
-        android:backgroundTint="#216EF3"
+        android:backgroundTint="#2167F3"
         android:text="戻る"
-        android:textSize="20dp"
+        android:textSize="19dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
