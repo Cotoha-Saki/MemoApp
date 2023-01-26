@@ -24,8 +24,8 @@
         android:id="@+id/start"
         android:layout_width="120dp"
         android:layout_height="65dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="556dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="564dp"
         android:backgroundTint="#42B1E3"
         android:text="メモ一覧"
         android:textSize="16dp"
@@ -33,11 +33,23 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/notice"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="648dp"
+        android:backgroundTint="#A1DA71"
+        android:text="お知らせ"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/DeletionHistory"
         android:layout_width="120dp"
         android:layout_height="65dp"
-        android:layout_marginStart="248dp"
-        android:layout_marginTop="556dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="564dp"
         android:backgroundTint="#E66D83"
         android:text="消したメモ"
         android:textSize="16dp"
@@ -53,5 +65,6 @@
         android:text="Ver.  1.0 (Beta)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

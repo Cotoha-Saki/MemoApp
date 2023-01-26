@@ -4,19 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MemoList">
-
-    <Button
-        android:id="@+id/newmemo"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="300dp"
-        android:layout_marginTop="628dp"
-        android:backgroundTint="#216EF3"
-        android:text="新規"
-        android:textSize="19dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".activity.Notice">
 
     <Button
         android:id="@+id/home"
