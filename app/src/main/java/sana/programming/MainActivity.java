@@ -25,10 +25,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case(R.id.start):
-                title.setText("ボタンが押されました");
+                title.setText("メモ一覧");
                 break;
 
             case(R.id.DeletionHistory):
+                title.setText("消したメモ");
                 break;
         }
     }
