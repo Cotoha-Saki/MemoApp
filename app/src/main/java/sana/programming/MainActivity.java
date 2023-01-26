@@ -9,18 +9,28 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private TextView title;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView title = findViewById(R.id.title);
+        title = findViewById(R.id.title);
 
-        Button start = findViewById(R.id.start);
-        ((Button)findViewById(R.id.DeletionHistory)).setOnClickListener(this);  //width,heightの数値を書いたらこれを書く
+        ((Button)findViewById(R.id.start)).setOnClickListener(this);
+        ((Button)findViewById(R.id.DeletionHistory)).setOnClickListener(this);
     }
 
     @Override
-    public void //動画を見て続きを書く
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case(R.id.start):
+                title.setText("ボタンが押されました");
+                break;
+
+            case(R.id.DeletionHistory):
+                break;
+        }
+    }
 }
 
