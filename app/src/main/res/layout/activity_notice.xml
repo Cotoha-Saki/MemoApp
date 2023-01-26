@@ -8,13 +8,13 @@
 
     <Button
         android:id="@+id/notice"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="628dp"
         android:backgroundTint="#216EF3"
         android:text="戻る"
-        android:textSize="19dp"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

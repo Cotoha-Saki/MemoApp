@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import sana.programming.activity.DeletionHistory;
 import sana.programming.activity.MemoList;
+import sana.programming.activity.Notice;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -39,9 +40,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intentDeletionHistory);
                 break;
 
-            case(R.id.notice):
-                Intent intentnotice = new Intent(getApplication(),DeletionHistory.class);
-                startActivity(intentnotice);
+            case (R.id.notice):
+                Intent intentNotice = new Intent(getApplication(), Notice.class);
+                startActivity(intentNotice);
                 break;
         }
     }
