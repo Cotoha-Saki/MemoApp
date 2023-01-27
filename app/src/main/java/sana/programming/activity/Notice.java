@@ -10,8 +10,7 @@ import android.widget.Button;
 import sana.programming.MainActivity;
 import sana.programming.R;
 
-public class Notice extends AppCompatActivity implements View.OnClickListener {
-
+public class Notice extends AppCompatActivity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,9 +18,11 @@ public class Notice extends AppCompatActivity implements View.OnClickListener {
 
         ((Button)findViewById(R.id.homeN)).setOnClickListener(this);
     }
+
     @Override
     public void onClick(View view) {
         Intent intentMain = new Intent(getApplication(), MainActivity.class);
         startActivity(intentMain);
     }
+
 }

@@ -44,13 +44,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
         android:id="@+id/notice"
         android:layout_width="120dp"
         android:layout_height="65dp"
         android:layout_marginStart="144dp"
-        android:layout_marginTop="648dp"
-        android:backgroundTint="#A1DA71"
+        android:layout_marginTop="628dp"
+        android:backgroundTint="#86C133"
         android:text="お知らせ"
         android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
