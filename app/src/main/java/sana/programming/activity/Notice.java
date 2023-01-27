@@ -17,9 +17,8 @@ public class Notice extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notice);
 
-        ((Button)findViewById(R.id.notice)).setOnClickListener(this);
+        ((Button)findViewById(R.id.homeN)).setOnClickListener(this);
     }
-
     @Override
     public void onClick(View view) {
         Intent intentMain = new Intent(getApplication(), MainActivity.class);
