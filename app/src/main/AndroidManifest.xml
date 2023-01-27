@@ -12,13 +12,13 @@
         android:theme="@style/Theme.MemoApp"
         tools:targetApi="31">
         <activity
-            android:name=".Notice"
-            android:exported="false" />
-        <activity
             android:name=".activity.MemoList"
             android:exported="false" />
         <activity
             android:name=".activity.DeletionHistory"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Notice"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
