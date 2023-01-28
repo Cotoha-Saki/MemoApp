@@ -5,8 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 import sana.programming.activity.DeletionHistory;
 import sana.programming.activity.MemoList;
@@ -25,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ((Button)findViewById(R.id.start)).setOnClickListener(this);
         ((Button)findViewById(R.id.DeletionHistory)).setOnClickListener(this);
         ((Button)findViewById(R.id.notice)).setOnClickListener(this);
+
     }
 
     @Override

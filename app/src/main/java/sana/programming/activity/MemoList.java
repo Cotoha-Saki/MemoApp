@@ -5,7 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 import sana.programming.MainActivity;
 import sana.programming.R;
@@ -19,6 +23,24 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
 
         ((Button)findViewById(R.id.newmemo)).setOnClickListener(this);
         ((Button)findViewById(R.id.home)).setOnClickListener(this);
+
+        //ListViewに表示するリスト項目をArrayListで準備する
+        ArrayList data = new ArrayList<>();
+        data.add("テスト");
+        data.add("テスト");
+        data.add("テスト");
+        data.add("テスト");
+        data.add("テスト");
+        data.add("テスト");
+        data.add("テスト");
+        data.add("テスト");
+
+        //リスト項目とListViewを対応付けるArrayAdapterを用意する
+        ArrayAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
+
+        //ListViewにArrayAdapterを設定する
+        ListView listView = (ListView)findViewById(R.id.memolist);
+        listView.setAdapter(adapter);
     }
 
     @Override
