@@ -22,6 +22,7 @@ public class Notice extends AppCompatActivity implements View.OnClickListener{
     @Override
     public void onClick(View view) {
         Intent intentMain = new Intent(getApplication(), MainActivity.class);
+        intentMain.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intentMain);
     }
 

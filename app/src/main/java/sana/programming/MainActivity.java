@@ -36,16 +36,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case(R.id.start):
                 Intent intentList = new Intent(getApplication(), MemoList.class);
+                intentList.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intentList);
                 break;
 
             case(R.id.DeletionHistory):
                 Intent intentDeletionHistory = new Intent(getApplication(), DeletionHistory.class);
+                intentDeletionHistory.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intentDeletionHistory);
                 break;
 
             case (R.id.notice):
                 Intent intentNotice = new Intent(getApplication(), Notice.class);
+                intentNotice.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intentNotice);
                 break;
         }

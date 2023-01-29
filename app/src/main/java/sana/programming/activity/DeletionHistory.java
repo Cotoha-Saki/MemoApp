@@ -24,6 +24,7 @@ public class DeletionHistory extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View view) {
         Intent intentMain = new Intent(getApplication(), MainActivity.class);
+        intentMain.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intentMain);
     }
 
