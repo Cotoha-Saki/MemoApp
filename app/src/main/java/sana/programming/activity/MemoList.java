@@ -42,6 +42,7 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
         ListView listView = (ListView)findViewById(R.id.memolist);
         listView.setAdapter(adapter);
 
+        //メモがないときはTextViewを表示してメモがあるときは非表示にさせる
         TextView textView = (TextView)findViewById(R.id.no_notes);
         if (data.isEmpty()) {
             textView.setText("メモがありません");
@@ -52,6 +53,7 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View view) {
+        //
         switch (view.getId()) {
             case (R.id.newmemo):
                 Intent intentNewmemo = new Intent(getApplication(),MemoList.class);
