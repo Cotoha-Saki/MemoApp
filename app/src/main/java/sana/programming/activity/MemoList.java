@@ -53,7 +53,7 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View view) {
-        //
+        //新たなメモを作成 or メイン画面に戻る
         switch (view.getId()) {
             case (R.id.newmemo):
                 Intent intentNewmemo = new Intent(getApplication(),MemoList.class);
