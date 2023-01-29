@@ -62,9 +62,9 @@
         android:id="@+id/Version"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="300dp"
-        android:layout_marginTop="696dp"
-        android:text="Ver.  1.0 (Beta)"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="704dp"
+        android:text="Ver 1.0 (Beta)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

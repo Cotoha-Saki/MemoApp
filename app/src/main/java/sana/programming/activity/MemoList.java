@@ -3,15 +3,12 @@ package sana.programming.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -30,10 +27,7 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
 
         //ListViewに表示するリスト項目をArrayListで準備する
         ArrayList data = new ArrayList<>();
-        data.add("テスト");
-        data.add("テスト");
-        data.add("テスト");
-        data.add("テスト");
+
 
         //リスト項目とListViewを対応付けるArrayAdapterを用意する
         ArrayAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
@@ -49,6 +43,9 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
         }else{
             textView.setText(null);
         }
+
+        TextView textView1 = (TextView) findViewById(R.id.supplement);
+        textView1.setText("新規をタップしてメモを作成してください");
     }
 
     @Override

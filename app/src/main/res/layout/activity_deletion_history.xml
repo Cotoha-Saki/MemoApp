@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="開発予定の機能です"
         android:textSize="38dp"
-        android:textColor="#D8D8D8"
+        android:textColor="#ACACAC"
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

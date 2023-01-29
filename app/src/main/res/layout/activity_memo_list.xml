@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="テキスト"
         android:textSize="38dp"
-        android:textColor="#D8D8D8"
+        android:textColor="#ACACAC"
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,6 +20,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4" />
+    <TextView
+        android:id="@+id/supplement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="テキスト"
+        android:textSize="18dp"
+        android:textColor="#ACACAC"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
 
     <Button
         android:id="@+id/newmemo"
@@ -27,7 +41,7 @@
         android:layout_height="75dp"
         android:layout_marginStart="300dp"
         android:layout_marginTop="628dp"
-        android:backgroundTint="#216EF3"
+        android:backgroundTint="#EC8A40"
         android:text="新規"
         android:textSize="19dp"
         app:layout_constraintStart_toStartOf="parent"
