@@ -65,6 +65,8 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
 
         //メイン画面に戻る
         switch (view.getId()) {
+            case (R.id.newmemo):
+
 
             case (R.id.home):
                 Intent intentHome = new Intent(getApplication(), MainActivity.class);

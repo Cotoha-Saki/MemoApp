@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -28,7 +29,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ((Button)findViewById(R.id.start)).setOnClickListener(this);
         ((Button)findViewById(R.id.DeletionHistory)).setOnClickListener(this);
         ((Button)findViewById(R.id.notice)).setOnClickListener(this);
-
     }
 
     @Override
