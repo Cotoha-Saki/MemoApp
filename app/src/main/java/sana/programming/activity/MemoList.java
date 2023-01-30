@@ -1,10 +1,15 @@
 package sana.programming.activity;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -27,6 +32,7 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
 
         //ListViewに表示するリスト項目をArrayListで準備する
         ArrayList data = new ArrayList<>();
+        //data.add("a");
 
 
         //リスト項目とListViewを対応付けるArrayAdapterを用意する
@@ -36,6 +42,7 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
         ListView listView = (ListView)findViewById(R.id.memolist);
         listView.setAdapter(adapter);
 
+
         //メモがないときはTextViewを表示してメモがあるときは非表示にさせる
         TextView textView = (TextView)findViewById(R.id.no_notes);
         if (data.isEmpty()) {
@@ -43,21 +50,22 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
         }else{
             textView.setText(null);
         }
-
         TextView textView1 = (TextView) findViewById(R.id.supplement);
-        textView1.setText("新規をタップしてメモを作成してください");
+        if (data.isEmpty()) {
+            textView1.setText("新規をタップしてメモを作成してください");
+        }else{
+            textView1.setText(null);
+        }
+
+
     }
 
     @Override
     public void onClick(View view) {
-        //新たなメモを作成 or メイン画面に戻る
-        switch (view.getId()) {
-            case (R.id.newmemo):
-                Intent intentNewmemo = new Intent(getApplication(),MemoList.class);
-                intentNewmemo.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
 
-                startActivity(intentNewmemo);
-                break;
+        //メイン画面に戻る
+        switch (view.getId()) {
+
             case (R.id.home):
                 Intent intentHome = new Intent(getApplication(), MainActivity.class);
                 intentHome.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
