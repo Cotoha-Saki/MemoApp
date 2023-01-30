@@ -66,4 +66,18 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="39dp" />
 
+    <TextView
+        android:id="@+id/newtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="39dp"/>
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

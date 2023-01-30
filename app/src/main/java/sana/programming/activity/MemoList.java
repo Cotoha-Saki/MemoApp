@@ -1,15 +1,10 @@
 package sana.programming.activity;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -32,7 +27,7 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
 
         //ListViewに表示するリスト項目をArrayListで準備する
         ArrayList data = new ArrayList<>();
-        //data.add("a");
+        data.add("テスト");
 
 
         //リスト項目とListViewを対応付けるArrayAdapterを用意する
@@ -67,7 +62,7 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
         switch (view.getId()) {
             case (R.id.newmemo):
 
-
+                break;
             case (R.id.home):
                 Intent intentHome = new Intent(getApplication(), MainActivity.class);
                 intentHome.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
