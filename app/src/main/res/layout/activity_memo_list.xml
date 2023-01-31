@@ -71,13 +71,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="39dp"/>
+        tools:layout_editor_absoluteY="39dp"
+        app:layout_constraintVertical_bias="0.4"/>
 
     <EditText
         android:id="@+id/edittext"
         android:layout_width="410dp"
         android:layout_height="60dp"
         android:gravity="top"
-        android:inputType="textMultiLine"/>
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/no_notes" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
