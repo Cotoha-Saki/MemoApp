@@ -27,7 +27,7 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
 
         //ListViewに表示するリスト項目をArrayListで準備する
         ArrayList data = new ArrayList<>();
-        data.add("テスト");
+        //data.add("テスト");
 
 
         //リスト項目とListViewを対応付けるArrayAdapterを用意する
@@ -51,8 +51,6 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
         }else{
             textView1.setText(null);
         }
-
-
     }
 
     @Override
