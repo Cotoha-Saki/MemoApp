@@ -12,7 +12,7 @@
         android:theme="@style/Theme.MemoApp"
         tools:targetApi="31">
         <activity
-            android:name=".MemoInput"
+            android:name=".activity.MemoInput"
             android:exported="false" />
         <activity
             android:name=".activity.MemoList"

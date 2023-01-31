@@ -21,7 +21,7 @@ public class MemoInput extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.activity_memo_input);
 
         ((Button)findViewById(R.id.save)).setOnClickListener(this);
-        //((Button)findViewById(R.id.memolist)).setOnClickListener(this);
+        ((Button)findViewById(R.id.memolist)).setOnClickListener(this);
 
         /*TextView textView = (TextView)findViewById(R.id.text);
         if (data.isEmpty()) {
