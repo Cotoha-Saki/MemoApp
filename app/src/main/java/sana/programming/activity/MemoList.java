@@ -55,11 +55,11 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View view) {
-
-        //メイン画面に戻る
         switch (view.getId()) {
             case (R.id.newmemo):
-
+                Intent intentNewmemo = new Intent(getApplication(), MemoInput.class);
+                intentNewmemo.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intentNewmemo);
                 break;
             case (R.id.home):
                 Intent intentHome = new Intent(getApplication(), MainActivity.class);

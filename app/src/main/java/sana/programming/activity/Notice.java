@@ -25,7 +25,9 @@ public class Notice extends AppCompatActivity implements View.OnClickListener{
 
         //ListViewに表示するリスト項目をArrayListで準備する
         ArrayList notice = new ArrayList<>();
-        notice.add("【1/30更新】現在、メモ機能を開発中です。完成まで今しばらくお待ちください。");
+        notice.add("【1/30更新】現在、メモ機能を開発中です。その他の機能については完成まで今しばらくお待ちください。");
+        notice.add("【1/31更新】現時点でToDo機能の完成日程は未定です。");
+
 
 
         //リスト項目とListViewを対応付けるArrayAdapterを用意する
