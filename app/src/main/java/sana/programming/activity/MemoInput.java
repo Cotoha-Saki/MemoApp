@@ -23,18 +23,12 @@ public class MemoInput extends AppCompatActivity implements View.OnClickListener
         ((Button)findViewById(R.id.save)).setOnClickListener(this);
         ((Button)findViewById(R.id.memolist)).setOnClickListener(this);
 
-        /*TextView textView = (TextView)findViewById(R.id.text);
-        if (data.isEmpty()) {
-            textView.setText("メモがありません");
-        }else{
-            textView.setText(null);
-        }
+        TextView textView = (TextView)findViewById(R.id.text);
+            textView.setText("メモを入力して下さい");
+
         TextView textView1 = (TextView) findViewById(R.id.minitext);
-        if (data.isEmpty()) {
-            textView1.setText("新規をタップしてメモを作成してください");
-        }else{
-            textView1.setText(null);
-        }*/
+            textView1.setText("※必ず保存を押してください※");
+
     }
 
     @Override
