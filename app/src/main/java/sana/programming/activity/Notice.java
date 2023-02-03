@@ -29,7 +29,6 @@ public class Notice extends AppCompatActivity implements View.OnClickListener{
         notice.add("【1/31更新】現時点でToDo機能の完成日程は未定です。");
 
 
-
         //リスト項目とListViewを対応付けるArrayAdapterを用意する
         ArrayAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, notice);
 

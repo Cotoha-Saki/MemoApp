@@ -24,7 +24,7 @@
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="【お知らせをタップするとお知らせが消えます】"
+        android:text="【タップでお知らせが消えます】"
         android:textSize="18dp"
         android:textColor="#FF3F3F"
         android:typeface="serif"
