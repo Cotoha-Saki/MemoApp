@@ -11,9 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.sql.DatabaseMetaData;
-import java.util.ArrayList;
-
 import sana.programming.Database.DataBase;
 import sana.programming.MainActivity;
 import sana.programming.R;
@@ -27,6 +24,10 @@ public class MemoInput extends AppCompatActivity implements View.OnClickListener
 
         ((Button)findViewById(R.id.save)).setOnClickListener(this);
         ((Button)findViewById(R.id.memolist)).setOnClickListener(this);
+
+        //MemoListクラスからmemoListDispryメゾットを呼び出し
+        MemoList memoListInstace = new MemoList();
+        memoListInstace.memoListDisplay();
 
         TextView textView = (TextView)findViewById(R.id.text);
             textView.setText("メモを入力して下さい");
