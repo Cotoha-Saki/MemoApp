@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -60,6 +61,7 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
                 Intent intentNewmemo = new Intent(getApplication(), MemoInput.class);
                 intentNewmemo.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intentNewmemo);
+
                 break;
             case (R.id.home):
                 Intent intentHome = new Intent(getApplication(), MainActivity.class);
