@@ -25,10 +25,6 @@ public class MemoInput extends AppCompatActivity implements View.OnClickListener
         ((Button)findViewById(R.id.save)).setOnClickListener(this);
         ((Button)findViewById(R.id.memolist)).setOnClickListener(this);
 
-        //MemoListクラスからmemoListDispryメゾットを呼び出し
-        MemoList memoListInstace = new MemoList();
-        memoListInstace.memoListDisplay();
-
         TextView textView = (TextView)findViewById(R.id.text);
             textView.setText("メモを入力して下さい");
 
@@ -44,23 +40,6 @@ public class MemoInput extends AppCompatActivity implements View.OnClickListener
                 Intent intentNewmemo = new Intent(getApplication(), MemoInput.class);
                 intentNewmemo.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intentNewmemo);
-
-                EditText editnote = findViewById(R.id.edittext);
-                String note = editnote.getText().toString();
-
-                DataBase dataBase = new DataBase(MemoInput.this);
-                SQLiteDatabase database = dataBase.getReadableDatabase();
-                try {
-                    String sqlInsert = "INSERT INTO notememo (name,note) VALUES (?)";
-                    SQLiteStatement sqLiteStatement = database.compileStatement(sqlInsert);
-                    sqLiteStatement.bindString(1,note);
-
-                    sqLiteStatement.executeInsert();
-                } finally {
-                    database.close();
-                }
-                editnote.setText("");
-
                 break;
             case (R.id.memolist):
                 Intent intentMemoList = new Intent(getApplication(), MainActivity.class);

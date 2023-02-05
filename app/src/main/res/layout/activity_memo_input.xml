@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.31" />
 
     <EditText
-        android:id="@+id/edittext"
+        android:id="@+id/edtText"
         android:layout_width="411dp"
         android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"

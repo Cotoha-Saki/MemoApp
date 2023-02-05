@@ -1,33 +1,55 @@
 package sana.programming.Database;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DataBase extends SQLiteOpenHelper {
 
-    private static final String DATABEASE_NAME = "notememo.db";
-    private static final int DATABASEE_VIRSION = 1;
+    private static final int DATABASE_VERSION = 3;
 
-    public DataBase(Context context) {
-        super(context,DATABEASE_NAME,null,DATABASEE_VIRSION);
+    private static final String DATABASE_NAME = "DB.db";
+    private static final String TABLE_NAME = "db";
+    private static final String _ID = "_id";
+    private static final String COLUMN_NAME_MEMO = "memo";
+
+    private static final String SQL_CREATE_ENTRIES =
+            "CREATE TABLE " + TABLE_NAME + " (" +
+                    _ID + " INTEGER PRIMARY KEY," +
+                    COLUMN_NAME_MEMO + " TEXT,)";
+
+    private static final String SQL_DELETE_ENTRIES =
+            "DROP TABLE IF EXISTS " + TABLE_NAME;
+
+    DataBase(Context context) {
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     @Override
-    public void onCreate(SQLiteDatabase Database){
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("CREATE TABLE notememo(");
-        stringBuilder.append("_id INTEGER PRIMARY KEY,");
-        stringBuilder.append("name TEXT,");
-        stringBuilder.append("note TEXT");
-        stringBuilder.append(");");
-        String sql = stringBuilder.toString();
-
-        Database.execSQL(sql);
+    public void onCreate(SQLiteDatabase db) {
+        db.execSQL(
+                SQL_CREATE_ENTRIES
+        );
+        saveData(db, "Memo");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL(
+                SQL_DELETE_ENTRIES
+        );
+        onCreate(db);
+    }
 
+    public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        onUpgrade(db, oldVersion, newVersion);
+    }
+
+    public void saveData(SQLiteDatabase db, String memo) {
+        ContentValues values = new ContentValues();
+        values.put("Memo", memo);
+
+        db.insert("db",null, values);
     }
 }
