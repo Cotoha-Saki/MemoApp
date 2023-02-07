@@ -1,17 +1,13 @@
-package sana.programming.activity;
+package sana.programming.OthersClass;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteStatement;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import sana.programming.Database.DataBase;
 import sana.programming.MainActivity;
 import sana.programming.R;
 

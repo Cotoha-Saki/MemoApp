@@ -1,11 +1,11 @@
-package sana.programming.Database;
+package sana.programming.OthersClass;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class DataBase extends SQLiteOpenHelper {
+public class SQLiteDataBase extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 3;
 
@@ -22,7 +22,7 @@ public class DataBase extends SQLiteOpenHelper {
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + TABLE_NAME;
 
-    DataBase(Context context) {
+    SQLiteDataBase(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

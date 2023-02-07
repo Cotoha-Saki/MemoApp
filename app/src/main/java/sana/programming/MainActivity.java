@@ -5,16 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
-import sana.programming.activity.DeletionHistory;
-import sana.programming.activity.MemoList;
-import sana.programming.activity.Notice;
+import sana.programming.OthersClass.DeletionHistory;
+import sana.programming.OthersClass.MemoList;
+import sana.programming.OthersClass.Notice;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

@@ -1,4 +1,4 @@
-package sana.programming.activity;
+package sana.programming.OthersClass;
 
 import androidx.appcompat.app.AppCompatActivity;
 
