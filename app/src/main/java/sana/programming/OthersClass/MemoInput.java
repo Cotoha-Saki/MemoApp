@@ -2,7 +2,9 @@ package sana.programming.OthersClass;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +14,7 @@ import sana.programming.MainActivity;
 import sana.programming.R;
 
 public class MemoInput extends AppCompatActivity implements View.OnClickListener {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,7 @@ public class MemoInput extends AppCompatActivity implements View.OnClickListener
                 Intent intentNewmemo = new Intent(getApplication(), MemoInput.class);
                 intentNewmemo.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intentNewmemo);
+
                 break;
             case (R.id.memolist):
                 Intent intentMemoList = new Intent(getApplication(), MainActivity.class);
