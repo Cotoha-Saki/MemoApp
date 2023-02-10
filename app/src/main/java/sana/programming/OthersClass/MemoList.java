@@ -80,8 +80,4 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
     public static void  DataBase(String[] args) {
 
     }
-
-    public void readData(View view) {
-        SQLiteDatabase db =
-    }
 }
