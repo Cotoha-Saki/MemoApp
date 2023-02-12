@@ -1,7 +1,6 @@
 package sana.programming;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +14,8 @@ import sana.programming.OthersClass.Notice;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView title;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ((Button)findViewById(R.id.DeletionHistory)).setOnClickListener(this);
         ((Button)findViewById(R.id.notice)).setOnClickListener(this);
     }
+
+
 
     @Override
     public void onClick(View view) {

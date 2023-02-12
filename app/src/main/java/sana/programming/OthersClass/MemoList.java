@@ -3,7 +3,6 @@ package sana.programming.OthersClass;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -33,8 +32,8 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
         ((Button)findViewById(R.id.home)).setOnClickListener(this);
 
         //ListViewに表示するリスト項目をArrayListで準備する
-        ArrayList data = new ArrayList<>();
-        //data.add("テスト");
+        ArrayList<String> data = new ArrayList<String>();
+        data.add("テスト");
 
 
         //リスト項目とListViewを対応付けるArrayAdapterを用意する
@@ -75,9 +74,5 @@ public class MemoList extends AppCompatActivity implements View.OnClickListener 
                 startActivity(intentHome);
                 break;
         }
-    }
-
-    public static void  DataBase(String[] args) {
-
     }
 }
